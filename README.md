@@ -104,5 +104,3 @@ VITE_API_URL=http://localhost:4000
 | API Style | REST              |
 
 ---
-Would you like me to generate a short **professional summary paragraph** (3–4 lines) for your GitHub repo’s top description (for the repo homepage)?
-That makes it look very polished to reviewers.
