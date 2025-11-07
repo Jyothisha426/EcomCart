@@ -76,6 +76,16 @@ VITE_API_URL=http://localhost:4000
 
 ---
 
+## Screenshots
+
+<img width="1899" height="862" alt="Screenshot 2025-11-07 131026" src="https://github.com/user-attachments/assets/529bf5eb-1f86-4f23-b184-33d389cbdb0d" />
+
+<img width="1898" height="873" alt="Screenshot 2025-11-07 131054" src="https://github.com/user-attachments/assets/05e1bbb9-b8bb-4f32-b9c8-3f4f2d2cd089" />
+
+<img width="1910" height="869" alt="Screenshot 2025-11-07 131116" src="https://github.com/user-attachments/assets/a5246913-16f0-4f86-891f-cc3176875815" />
+
+---
+
 ## 🧑‍💻 Developer Notes
 
 * No real payments — mock flow only.
