@@ -1,0 +1,97 @@
+/* Global theme variables */
+:root {
+    --primary-color: #6a11cb; /* Purple gradient start */
+    --secondary-color: #2575fc; /* Blue gradient end */
+    --text-light: #ffffff;
+    --text-dark: #1a1a1a;
+    --hover-bg: rgba(255, 255, 255, 0.15);
+    --transition-speed: 0.3s;
+    --shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Navbar container */
+  .navbar {
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+    color: var(--text-light);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    box-shadow: var(--shadow);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: background var(--transition-speed);
+  }
+  
+  /* Logo section */
+  .logo {
+    font-size: 1.6rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: transform var(--transition-speed);
+  }
+  
+  .logo:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Nav links container */
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 35px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Each nav link */
+  .nav-links li {
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+    padding: 8px 16px;
+    border-radius: 8px;
+    transition: background var(--transition-speed), transform var(--transition-speed);
+  }
+  
+  /* Hover and active states */
+  .nav-links li:hover {
+    background: var(--hover-bg);
+  }
+  
+  .nav-links li.active {
+    background: rgba(255, 255, 255, 0.2);
+    font-weight: 600;
+    box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.4);
+  }
+  
+  /* Responsive: Stack links on small screens */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      gap: 15px;
+      padding: 15px 20px;
+    }
+  
+    .nav-links {
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .logo {
+      font-size: 1.3rem;
+    }
+  }
+  
+  /* Optional subtle glow effect on hover */
+  .navbar:hover {
+    background: linear-gradient(90deg, #5b0ebf, #1e66f5);
+  }
+  

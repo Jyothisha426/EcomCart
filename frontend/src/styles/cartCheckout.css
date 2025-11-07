@@ -1,0 +1,190 @@
+:root {
+    --primary-color: #6a11cb;
+    --secondary-color: #2575fc;
+    --text-light: #ffffff;
+    --text-dark: #1a1a1a;
+    --card-bg: #ffffff;
+    --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    --transition: 0.3s ease;
+  }
+  
+  .cart-checkout-page {
+    max-width: 800px;
+    margin: 60px auto;
+    background: var(--card-bg);
+    padding: 30px 40px;
+    border-radius: 14px;
+    box-shadow: var(--shadow);
+    animation: fadeIn 0.6s ease-in-out;
+  }
+  
+  .cart-checkout-page h2 {
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .empty {
+    text-align: center;
+    color: #666;
+    font-style: italic;
+  }
+  
+  .cart-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    padding: 12px 0;
+  }
+  
+  .cart-item button {
+    background: linear-gradient(90deg, var(--secondary-color), var(--primary-color));
+    color: var(--text-light);
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all var(--transition);
+  }
+  
+  .cart-item button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  .total {
+    text-align: right;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin: 20px 0;
+  }
+  
+  .divider {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 25px 0;
+  }
+  
+  /* Checkout Form */
+  .checkout-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .checkout-form h3 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: var(--text-dark);
+  }
+  
+  .checkout-form input {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    font-size: 1rem;
+    transition: border var(--transition);
+  }
+  
+  .checkout-form input:focus {
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 4px rgba(37, 117, 252, 0.3);
+  }
+  
+  .checkout-form button {
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all var(--transition);
+  }
+  
+  .checkout-form button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Animation */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  @media (max-width: 600px) {
+    .cart-checkout-page {
+      padding: 20px;
+    }
+  
+    .checkout-form input,
+    .checkout-form button {
+      font-size: 0.95rem;
+    }
+  }
+  
+
+  /* --- Quantity Controls --- */
+.qty-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.qty-controls button {
+  background: linear-gradient(90deg, var(--secondary-color), var(--primary-color));
+  color: var(--text-light);
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all var(--transition);
+  font-weight: 500;
+}
+
+.qty-controls button:hover {
+  transform: scale(1.08);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+.qty-controls button:disabled {
+  background: #ccc;
+  color: #666;
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
+}
+
+.qty-controls .qty {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  min-width: 24px;
+  text-align: center;
+}
+
+/* Add spacing after the + button and before Remove */
+.qty-controls button:last-child {
+  margin-left: 8px;
+}
+
+/* Better layout for small screens */
+@media (max-width: 600px) {
+  .qty-controls {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+}
