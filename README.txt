@@ -36,6 +36,3 @@ Notes / Features
 - Simple error handling is present.
 - Checkout clears the cart and returns a receipt object (total, timestamp, name, email).
 - No real payments — mock only.
-- Bonus: You can replace the products by editing db.js initial data.
-
-If you want a single-command demo using Docker or scripts, tell me and I can add them.
