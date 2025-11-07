@@ -7,6 +7,9 @@ It demonstrates **React (Vite)** frontend, **Node.js + Express** backend, and **
 Supports adding/removing items, cart totals, and mock checkout flow.
 
 ---
+## Demo Video
+🎥 Watch here: [Demo on Youtube](https://youtu.be/-VqVs9alRGo?si=lZrmXeNw_pLgwJrL)
+---
 
 ## 📂 Folder Structure
 
